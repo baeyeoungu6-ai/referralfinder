@@ -24,8 +24,20 @@
           <div class="eyebrow">URL checker</div>
           <h1>Check a Binance referral link</h1>
           <p class="lead">Paste the full Binance URL. This page checks the domain, HTTPS, and referral parameter only. It does not log in to Binance or read account data.</p>
+          <ul class="hero-points">
+            <li>Works with Binance referral URLs that include parameters such as <strong>ref=MAXUP</strong>.</li>
+            <li>Flags non-Binance domains so users avoid suspicious links.</li>
+            <li>Directs users to Binance's official page for final confirmation.</li>
+          </ul>
         </div>
         <div class="tool">
+          <div class="diagnosis-header">
+            <div>
+              <h2>Analyze URL</h2>
+              <p>Paste only a public link.</p>
+            </div>
+            <span class="pill">Private</span>
+          </div>
           <form class="checker" data-link-checker>
             <label for="referral-url">Binance referral URL</label>
             <input id="referral-url" type="url" placeholder="https://www.binance.com/en/activity/referral?ref=MAXUP" required>
@@ -41,6 +53,15 @@
           <div class="actions">
             <a class="button" href="https://www.binance.com/en/activity/referral?ref=MAXUP" rel="nofollow sponsored">Open Binance referral page</a>
           </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="eyebrow">Safety boundary</div>
+        <h2>What this checker does not verify</h2>
+        <div class="method-grid">
+          <article class="method-card"><div class="number">!</div><h3>No account access</h3><p>It cannot read your real inviter, fee discount, rebate status, or account eligibility.</p></article>
+          <article class="method-card"><div class="number">!</div><h3>No private data</h3><p>Never enter a Binance password, OTP, UID, API key, or identity document here.</p></article>
+          <article class="method-card"><div class="number">!</div><h3>No guarantee</h3><p>A URL parameter means the link contains a code. Binance must confirm actual application.</p></article>
         </div>
       </section>
     </main>
