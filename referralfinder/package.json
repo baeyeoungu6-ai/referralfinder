@@ -1,0 +1,11 @@
+{
+  "name": "binance-referral-finder",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "npx serve public",
+    "check": "node scripts/check.js"
+  },
+  "devDependencies": {}
+}
