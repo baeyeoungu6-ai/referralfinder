@@ -410,6 +410,84 @@ p {
   border-left: 5px solid var(--gold);
 }
 
+.promo {
+  border: 1px solid rgba(240, 185, 11, 0.55);
+  border-radius: 8px;
+  background: linear-gradient(135deg, #fff8dc 0%, #ffffff 62%);
+  box-shadow: 0 20px 55px rgba(240, 185, 11, 0.12);
+  padding: 28px;
+}
+
+.promo-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+}
+
+.promo h2 {
+  font-size: clamp(26px, 3.2vw, 42px);
+}
+
+.promo-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(110px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.promo-metric {
+  border: 1px solid rgba(17, 24, 39, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.82);
+  padding: 14px;
+}
+
+.promo-metric strong {
+  display: block;
+  color: var(--ink);
+  font-size: 24px;
+  line-height: 1.05;
+}
+
+.promo-metric span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.promo-code {
+  display: grid;
+  gap: 12px;
+  min-width: 220px;
+}
+
+.code-box {
+  border: 1px dashed rgba(17, 24, 39, 0.38);
+  border-radius: 8px;
+  background: #fff;
+  padding: 18px;
+  text-align: center;
+}
+
+.code-box span {
+  display: block;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.code-box strong {
+  display: block;
+  color: var(--ink);
+  font-size: 32px;
+  letter-spacing: 0;
+}
+
+.fineprint {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 14px;
+}
+
 .checker {
   display: grid;
   gap: 12px;
@@ -491,7 +569,9 @@ select:focus {
   .hero,
   .grid,
   .method-grid,
-  .trust-strip {
+  .trust-strip,
+  .promo-grid,
+  .promo-metrics {
     grid-template-columns: 1fr;
   }
 
