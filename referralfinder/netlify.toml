@@ -2,6 +2,9 @@
   publish = "dist"
   command = "npm run build"
 
+# If this project is inside a GitHub subfolder named "referralfinder",
+# set Netlify's Base directory to: referralfinder
+
 [[headers]]
   for = "/*"
   [headers.values]
